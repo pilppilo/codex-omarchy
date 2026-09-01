@@ -1,0 +1,10 @@
+# Build artifacts
+*.deb
+*.pkg.tar.zst
+*.pkg.tar.xz
+src/
+pkg/
+
+# Local cache & repository database files
+repo/
+*.log

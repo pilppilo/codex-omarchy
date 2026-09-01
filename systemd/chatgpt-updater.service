@@ -1,0 +1,11 @@
+[Unit]
+Description=Check and build ChatGPT package updates for local pacman repository
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/codex-pkgbuild
+ExecStart=%h/codex-pkgbuild/update.sh auto
+StandardOutput=journal
+StandardError=journal
