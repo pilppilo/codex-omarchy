@@ -38,7 +38,7 @@ Ensure you have `base-devel` installed:
 
 ```bash
 # Clone this repository (matches systemd unit expectations)
-git clone https://github.com/<your-username>/codex-pkgbuild.git
+git clone https://github.com/flub/codex-pkgbuild.git
 cd codex-pkgbuild
 
 # Build and install using standard makepkg
@@ -65,7 +65,7 @@ If you want `sudo pacman -Syu` to manage upgrades automatically from your local 
    ```ini
    [chatgpt-local]
    SigLevel = Optional TrustAll
-   Server = file:///home/<user>/codex-pkgbuild/repo
+   Server = file:///home/flub/codex-pkgbuild/repo
    ```
 
 2. Build and populate the repository:
