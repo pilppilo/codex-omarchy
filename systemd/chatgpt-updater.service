@@ -5,7 +5,7 @@ Wants=network-online.target
 
 [Service]
 Type=oneshot
-WorkingDirectory=%h/codex-pkgbuild
-ExecStart=%h/codex-pkgbuild/update.sh auto
+WorkingDirectory=%h/codex-omarchy
+ExecStart=%h/codex-omarchy/update.sh auto
 StandardOutput=journal
 StandardError=journal

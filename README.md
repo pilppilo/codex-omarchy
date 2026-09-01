@@ -38,8 +38,8 @@ Ensure you have `base-devel` installed:
 
 ```bash
 # Clone this repository (matches systemd unit expectations)
-git clone https://github.com/flub/codex-pkgbuild.git
-cd codex-pkgbuild
+git clone git@github.com:pilppilo/codex-omarchy.git
+cd codex-omarchy
 
 # Build and install using standard makepkg
 makepkg -si
@@ -65,7 +65,7 @@ If you want `sudo pacman -Syu` to manage upgrades automatically from your local 
    ```ini
    [chatgpt-local]
    SigLevel = Optional TrustAll
-   Server = file:///home/flub/codex-pkgbuild/repo
+   Server = file:///path/to/codex-omarchy/repo
    ```
 
 2. Build and populate the repository:
