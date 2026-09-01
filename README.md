@@ -37,9 +37,9 @@ Following the Arch Linux standard filesystem hierarchy:
 Ensure you have `base-devel` installed:
 
 ```bash
-# Clone this repository
-git clone https://github.com/<your-username>/chatgpt-arch.git
-cd chatgpt-arch
+# Clone this repository (matches systemd unit expectations)
+git clone https://github.com/<your-username>/codex-pkgbuild.git
+cd codex-pkgbuild
 
 # Build and install using standard makepkg
 makepkg -si
