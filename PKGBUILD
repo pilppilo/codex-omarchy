@@ -1,6 +1,6 @@
 # Maintainer: weakandslowdev <weakandslowdev@outlook.com>
 pkgname=chatgpt
-pkgver=26.831.20005
+pkgver=26.915.31945
 pkgrel=1
 pkgdesc="ChatGPT Desktop application by OpenAI"
 arch=('x86_64')
@@ -46,7 +46,7 @@ optdepends=(
 options=('!strip')
 
 source=("${pkgname}_${pkgver}_amd64.deb::https://persistent.oaistatic.com/codex-app-prod/linux/deb/latest/chatgpt_amd64.deb")
-sha256sums=('1cef3e8405f695b7f03fd1b072460d1185b7d53e24b727e3be25613e68a751aa')
+sha256sums=('d27a9c02919cfe484dcc5f34584b9ea9fd0d7a65c69dcc872b5bdcfa0efb5983')
 
 package() {
   # Extract data archive from deb directly to $pkgdir

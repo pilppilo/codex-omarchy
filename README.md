@@ -54,6 +54,7 @@ makepkg -si
 | `./update.sh build` | Bumps `PKGBUILD` and runs `makepkg -f` to generate `.pkg.tar.zst`. |
 | `./update.sh install` | Bumps `PKGBUILD`, builds, and runs `makepkg -si` to install. |
 | `./update.sh repo` | Adds the built package to a local pacman repository database. |
+| `./update.sh clean` | Cleans past source `.deb` files, old `.pkg.tar.zst` packages, cache files, and intermediate `src/`/`pkg/` trees (`-n` dry-run, `-a` all, `-k <N>` keep count). |
 
 ---
 
@@ -91,7 +92,7 @@ systemctl --user daemon-reload
 systemctl --user enable --now chatgpt-updater.timer
 ```
 
-When an update is detected, the timer builds the package into your local repo and sends a desktop notification (`notify-send`).
+When an update is detected, the timer builds the package into your local repo, automatically cleans past build artifacts to conserve disk space, and sends a desktop notification (`notify-send`).
 
 ---
 
